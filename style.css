@@ -91,6 +91,11 @@ header {
 .about__icons img {
     width: 30px;
     height: 30px;
+    transition: 0.5s;
+}
+
+.about__icons img:hover{
+    transform: scale(1.2);
 }
 
 main {
@@ -164,9 +169,11 @@ footer {
     gap: 1em;
     padding: var(--padding-between);
     line-height: 1.4;
+    font-size: 1.2em;
 }
 .footer__foto {
     max-width: 600px;
+    min-width: 300px;
 }
 
 .footer__foto img{
@@ -194,9 +201,15 @@ address img {
     margin-top: 1em;
 }
 
-.footer__icons img {
-    width: 30px;
-    height: 30px;
+
+.footer__icons svg {
+    width: 50px;
+    height: 50px;
+}
+
+.footer__icons svg:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
 }
 
 .icons {
@@ -211,4 +224,31 @@ footer a {
 }
 
 @media (max-width: 800px) {
+}
+
+@media (max-width: 430px) {
+    main h2, footer h2 {
+        text-align: center;
+    }
+
+    footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 1em;
+    padding: 0;
+    margin-top: 2em;
+    }
+
+
+
+    .footer__contacts {
+        padding: 1em;
+    }
+
+    .footer__icons {
+        justify-content: center;
+}
+
+ 
 }
