@@ -13,6 +13,12 @@
 body {
     font-family: Galdeano;
     font-size: 1.2rem;
+    background-image: url('./img/45degreee_fabric.webp');
+
+}
+
+img {
+    display: inline-block;
 }
 
 .wrapper {
@@ -95,7 +101,7 @@ header {
 }
 
 .about__icons img:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 main {
@@ -119,18 +125,22 @@ main {
     gap: 1em;
     border-radius: 10px;
     box-shadow: 0 0 5px rgb(105, 104, 104);
-    filter: grayscale(70%);
     transition: 0.5s;
 
 }
 
 .works__card:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.card__screenshot {
-    width: 100%;
+.card__screenshot img{
+    width: 100%;   
+    filter: grayscale(100%);
+}
+
+.card__screenshot:hover, .works__card:hover .card__screenshot img{
+    width: 100%;   
+    filter: grayscale(0%);
 }
 
 .card__screenshot img {
@@ -149,12 +159,13 @@ main {
 .card__icons img {
     width: 30px;
     height: 30px;
+    transition: 0.5s;
+
 }
 
 
 .card__icons img:hover {
-    transform: scale(1.2);
-    transition: 0.3s;
+    transform: scale(1.4);
 }
 
 .card__description {
@@ -221,6 +232,11 @@ address img {
 footer a {
     color: #fff;
     text-decoration: none;
+    transition: 0.5s ease;
+}
+
+footer a:hover {
+    color: #000000;
 }
 
 @media (max-width: 800px) {
