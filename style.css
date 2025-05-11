@@ -18,10 +18,10 @@ body {
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
-    /* box-shadow: 0 0 5px black; */
 }
 
 h2 {
+    margin-bottom: 1em;
 }
 
 header {
@@ -35,7 +35,8 @@ header {
 
 .header__skew {
     height: 60vh;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background-color: yellowgreen;
     width: 100%;
     position: absolute;
     left: 0;
@@ -52,13 +53,9 @@ header {
 }
 
 .about__description {
-    /* position: relative; */
-    /* width: 50%; */
-    /* max-height: 300px ; */
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 5px black;
-    /* max-width: 70vw; */
+    box-shadow: 0 0 5px rgb(105, 104, 104);
     padding: 1em;
     line-height: 1.4;
 }
@@ -67,6 +64,21 @@ header {
     position: relative;
     top:0px;
     left: 10px;
+}
+
+.about__foto img {
+    position: relative;
+    border-radius: 10px;     
+    box-shadow: 0 0 5px rgb(105, 104, 104);
+}
+
+.promo__text {
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    bottom: -15px;
+    font-size: 1.4em;
+    color: #fff;
 }
 
 .about__icons {
@@ -82,35 +94,38 @@ header {
 }
 
 main {
-    /* background-color: bisque; */
-    /* padding: var(--padding-between); */
     padding: 0 2em 1em 2em;
 }
 
 .works__container {
     width: 100%;
-    /* background-color: yellowgreen; */
     display: flex;
     justify-content: space-evenly;
-    gap: 1em;
+    gap: 2em;
     flex-wrap: wrap;
 }
 
 .works__card {
     display: flex;
-    max-width: 32%;
+    max-width: 31%;
+    min-width: 300px;
     flex-direction: column;
-        background-color: yellowgreen;
+    background-color: yellowgreen;
     gap: 1em;
-    /* padding: 1em; */
     border-radius: 10px;
-    box-shadow: 0 0 5px black;
-    margin-top: 1em;
+    box-shadow: 0 0 5px rgb(105, 104, 104);
+    filter: grayscale(70%);
+    transition: 0.5s;
+
+}
+
+.works__card:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
 }
 
 .card__screenshot {
     width: 100%;
-    /* border-radius: 10px; */
 }
 
 .card__screenshot img {
@@ -131,6 +146,12 @@ main {
     height: 30px;
 }
 
+
+.card__icons img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
 .card__description {
     margin-bottom: 2em;
     padding: 0 1em;
@@ -142,6 +163,25 @@ footer {
     background-color: blueviolet;
     gap: 1em;
     padding: var(--padding-between);
+    line-height: 1.4;
+}
+.footer__foto {
+    max-width: 600px;
+}
+
+.footer__foto img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+address {
+    font-style: normal;
+}
+
+address img {
+    width: 30px;
+    height: 30px;
 }
 
 .footer__contacts {
@@ -157,4 +197,18 @@ footer {
 .footer__icons img {
     width: 30px;
     height: 30px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
 }
