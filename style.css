@@ -93,9 +93,9 @@ header {
 .promo__text {
     position: absolute;
     z-index: 1;
-    left: 15px;
+    left: 30px;
     bottom: -15px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #fff;
     text-shadow: 1px 1px 3px black;
 }
