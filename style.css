@@ -93,7 +93,7 @@ header {
 .promo__text {
     position: absolute;
     z-index: 1;
-    left: 30px;
+    left: 25px;
     bottom: -15px;
     font-size: 1.2em;
     color: #fff;
