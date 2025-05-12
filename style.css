@@ -287,7 +287,10 @@ footer a:hover {
         padding: 0;
     }
 
-
+    .works__card {
+        max-width: 90%;
+        gap: 0.3em;
+    }
 
     .footer__icons {
         justify-content: center;
