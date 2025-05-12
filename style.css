@@ -18,6 +18,7 @@
 body {
     font-family: Galdeano, sans-serif;
     font-size: 1.2rem;
+    line-height: 1.4;
     background-image: url('./img/45degreee_fabric.webp');
 }
 
@@ -49,9 +50,9 @@ header {
     left: 0;
     top: 0;
     z-index: -1;
-    box-shadow: 0 0 5px black;
-    background-color: yellowgreen;
-    transform: translate(0, -40%) skewY(-14grad);
+    box-shadow: 0 0 5px #000000;
+    background-color: #9acd32;
+    transform: translate(0, -40%) skewY(-14deg);
 }
 
 .header__about {
@@ -96,6 +97,7 @@ header {
     bottom: -15px;
     font-size: 1.3em;
     color: #fff;
+    text-shadow: 1px 1px 3px black;
 }
 
 .about__icons {
@@ -252,6 +254,10 @@ footer a:hover {
     .header__about {
         flex-direction: column;
     }
+
+        main h2, footer h2 {
+        text-align: center;
+    }
     
     footer {
         flex-direction: column;
@@ -270,7 +276,7 @@ footer a:hover {
     .header__skew {
         height: 80vh;
         z-index: -1;
-        transform: translate(0, -22%) skewY(-26grad);
+        transform: translate(0, -22%) skewY(-26deg);
 }
 
     .about__foto {
@@ -281,9 +287,7 @@ footer a:hover {
         padding: 0;
     }
 
-    main h2, footer h2 {
-        text-align: center;
-    }
+
 
     .footer__icons {
         justify-content: center;
